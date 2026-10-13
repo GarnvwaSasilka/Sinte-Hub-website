@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+.netlify/
+*.tsbuildinfo
+next-env.d.ts
+
+# Secrets: never commit these
+.env
+.env.local
+.env.*.local
+.env.backup
+
+# Backups contain customer details: keep them off GitHub
+backups/
+*.zip
+
+.DS_Store
+npm-debug.log*
