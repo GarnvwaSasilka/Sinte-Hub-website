@@ -252,7 +252,7 @@ create table public.store_settings (
   faq                 jsonb not null default '[]'::jsonb check (jsonb_typeof(faq) = 'array'),
   updated_at          timestamptz not null default now()
 );
-insert into public.store_settings (id) values (1);
+insert into public.store_settings (id, pickup_area) values (1, 'Kaduna and Azare');
 
 -- ---------------------------------------------------------------------
 -- 7. updated_at triggers
